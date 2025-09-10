@@ -1,16 +1,33 @@
+using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class Countdown : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public QuestionHandler qHandler;
+    public TMP_Text countdownText;
+    public TMP_Text otherText;
+    public UI ui;
+    public void startButton()
     {
-        
+        StartCoroutine(countdown());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator countdown()
     {
-        
+        ui.HidesGame();
+        ui.HidesGameResults();
+        ui.ShowsGame();
+        otherText.text = "game starts";
+        int time = 5;
+        while (time > 0)
+        {
+            countdownText.text = time.ToString();
+            yield return new WaitForSeconds(1);
+            time--;
+        }
+        countdownText.text = "Go!";
+        yield return new WaitForSeconds(1);
+        qHandler.startQuestion();
     }
 }
