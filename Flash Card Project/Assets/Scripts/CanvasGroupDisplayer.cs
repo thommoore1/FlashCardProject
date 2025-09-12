@@ -12,11 +12,11 @@
  */
 
 
+
 using UnityEngine;
 
 public static class CanvasGroupDisplayer
-{
-    
+{   
     /*
      * a. Show()
      * b. does not return a value
