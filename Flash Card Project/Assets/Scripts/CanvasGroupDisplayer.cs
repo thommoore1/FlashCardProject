@@ -9,14 +9,14 @@ using UnityEngine;
 
 public static class CanvasGroupDisplayer
 {
-    public static void Show(CanvasGroup canvasGroup)
+    public static void Show(CanvasGroup canvasGroup) //makes a canvas visible and interactable
     {
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
     }
 
-    public static void Hide(CanvasGroup canvasGroup)
+    public static void Hide(CanvasGroup canvasGroup) // makes a canvas invisible and uninteractable
     {
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
