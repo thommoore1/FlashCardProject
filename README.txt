@@ -12,4 +12,8 @@ Submitted Files:
 References: No references used
 ----- 
 How to run:
-- 
+- Run exe file
+- Click start Button
+-Pick an answer for the question
+-After answering all questions press restart if you want to play again
+-Press quit to exit the game.
