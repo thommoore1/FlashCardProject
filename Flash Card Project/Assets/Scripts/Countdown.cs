@@ -13,9 +13,16 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Countdown : MonoBehaviour
 {
+ 
+/*
+ * Audio source for playing button sound
+ */
+ public AudioSource audioData;
+ 
     /*
      * Question Handler object, used for handling the questions given by game
      */
@@ -33,6 +40,8 @@ public class Countdown : MonoBehaviour
      */
     public UI ui;
     
+    public QuestionGenerator qGenerator;
+    
     /*
      * a. StartButton()
      * b. does not return a value
@@ -41,6 +50,9 @@ public class Countdown : MonoBehaviour
      */
     public void startButton()
     {
+     ui.stopButtons();
+     audioData.Play();
+     qGenerator.reset();
         StopAllCoroutines();
         StartCoroutine(countdown());
     }
@@ -66,6 +78,7 @@ public class Countdown : MonoBehaviour
         }
         countdownText.text = "Go!";
         yield return new WaitForSeconds(1);
+        ui.startButtons();
         qHandler.startQuestion();
     }
 }
