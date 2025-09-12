@@ -18,6 +18,10 @@ using TMPro;
 public class QuestionHandler : MonoBehaviour
 {
     /*
+     * Audio source for playing button sound
+     */
+    public AudioSource audioData;
+    /*
      * Used to represent of number of questions that have been asked
      */
     public int totalQuestions;
@@ -80,6 +84,7 @@ public class QuestionHandler : MonoBehaviour
      */
     public void buttonAClicked()
     {
+        audioData.Play();
         checkAnswer(1);
     }
     
@@ -91,6 +96,7 @@ public class QuestionHandler : MonoBehaviour
      */
     public void buttonBClicked()
     {
+        audioData.Play();
         checkAnswer(2);
     }
     
@@ -102,6 +108,7 @@ public class QuestionHandler : MonoBehaviour
      */
     public void buttonCClicked()
     {
+        audioData.Play();
         checkAnswer(3);
     }
 

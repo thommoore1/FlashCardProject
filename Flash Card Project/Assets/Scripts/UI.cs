@@ -11,6 +11,7 @@
  */
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
@@ -26,6 +27,14 @@ public class UI : MonoBehaviour
      * Canvas Group for the results screen
      */
     public CanvasGroup gameResultsGroup;
+
+    /*
+     * buttons A B C for answering flash cards
+     */
+    public Button buttonA;
+    public Button buttonB;
+    public Button buttonC;
+    
     
     /*
      * a. ShowsGame()
@@ -36,6 +45,32 @@ public class UI : MonoBehaviour
     public void ShowsGame()
     {
         CanvasGroupDisplayer.Show(gameScreenGroup);
+    }
+
+    /*
+     * a. stopButtons()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
+    public void stopButtons()
+    {
+     buttonA.interactable = false;
+     buttonB.interactable = false;
+     buttonC.interactable = false;
+    }
+
+    /*
+     * a. StartButtons()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
+    public void startButtons()
+    {
+     buttonA.interactable = true;
+     buttonB.interactable = true;
+     buttonC.interactable = true;
     }
 
     /*
