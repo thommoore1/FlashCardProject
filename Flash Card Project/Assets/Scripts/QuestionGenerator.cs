@@ -1,3 +1,15 @@
+/*
+ * 1)
+ * Names: Tom Moore and Sammy Rokaw
+ * Emails: thomoore@chapman.edu rokaw@chapman.edu
+ * ID: Tom: 2444464 Sammy: 2444664
+ * Course: GAME245-01
+ * Assignment 1
+ *
+ * 2)
+ * This file is used to generate the math questions for the flash cards
+ */
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -12,6 +24,12 @@ public class QuestionGenerator : MonoBehaviour
     public int int2; //second value
     public int cAnswerPos; // position value of correct answer
     
+    /*
+     * a. GenerateQuestion()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public void GenerateQuestion()
     {
         int1 = Random.Range(1, 13);
@@ -38,6 +56,12 @@ public class QuestionGenerator : MonoBehaviour
         }
     }
 
+    /*
+     * a. makeLowerWrongAnswer()
+     * b. Returns an int representing the lower end of the wrong answers
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     private int makeLowerWrongAnswer()
     {
         if (int2 > 1)
@@ -50,6 +74,12 @@ public class QuestionGenerator : MonoBehaviour
         }
     }
     
+    /*
+     * a. makeHigherWrongAnswer()
+     * b. Returns an int representing the higher end of the wrong answers
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     private int makeHigherWrongAnswer()
     {
         if (int2 < 12)
@@ -61,7 +91,13 @@ public class QuestionGenerator : MonoBehaviour
             return int1 * (int2 - 2);
         }
     }
-
+    
+    /*
+     * a. getCorrectAnswer()
+     * b. Returns an int representing correctAnswer
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public int getCorrectAnswer()
     {
         return cAnswerPos;
