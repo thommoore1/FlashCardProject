@@ -9,11 +9,11 @@ Submitted Files:
 - Scripts folder
 - README.txt
 -----
-References: No references used
+References: UI and CanvasGroupDisplayer are based off the code from RunCorgiRun game that we wrote in CPSC 236
 ----- 
 How to run:
 - Run exe file
 - Click start Button
--Pick an answer for the question
--After answering all questions press restart if you want to play again
--Press quit to exit the game.
+- Pick an answer for the question
+- After answering all questions press restart if you want to play again
+- Press quit to exit the game.
