@@ -1,10 +1,15 @@
 /*
-Names: Tom Moore and Sammy Rokaw
-Emails: thomoore@chapman.edu rokaw@chapman.edu
-ID: Tom: 2444464 Sammy: 2444664
-Course: GAME245-01
-Assignment 1
-  */ 
+ * 1)
+ * Names: Tom Moore and Sammy Rokaw
+ * Emails: thomoore@chapman.edu rokaw@chapman.edu
+ * ID: Tom: 2444464 Sammy: 2444664
+ * Course: GAME245-01
+ * Assignment 1
+ *
+ * 2)
+ * This file is used to control the state of the current questions
+ */
+
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,15 +17,42 @@ using TMPro;
 
 public class QuestionHandler : MonoBehaviour
 {
+    /*
+     * Used to represent of number of questions that have been asked
+     */
     public int totalQuestions;
+    /*
+     * Used to represent number of correct answers
+     */
     public int numCorrect;
+    /*
+     * Used to display time left to answer question
+     */
     public TMP_Text timer;
+    /*
+     * Used to represent game state
+     */
     public TMP_Text otherText;
+    /*
+     * Used to represent final score
+     */
     public TMP_Text result;
     
+    /*
+     * Used to generate questions
+     */
     public QuestionGenerator qG;
+    /*
+     * Used to effect AI
+     */
     public UI ui;
     
+    /*
+     * a. startQuestion()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public void startQuestion()
     {
         totalQuestions = 0;
@@ -28,27 +60,57 @@ public class QuestionHandler : MonoBehaviour
         initializeQuestion();
     }
 
+    /*
+     * a. quit()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public void quit()
     {
         Application.Quit();
     }
 
 
+    /*
+     * a. buttonAClicked()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public void buttonAClicked()
     {
         checkAnswer(1);
     }
     
+    /*
+     * a. buttonBClicked()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public void buttonBClicked()
     {
         checkAnswer(2);
     }
     
+    /*
+     * a. buttonCClicked()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     public void buttonCClicked()
     {
         checkAnswer(3);
     }
 
+    /*
+     * a. checkAnswer()
+     * b. Does not return a value
+     * c. Takes in the index of the button that was clicked
+     * d. No exceptions thrown
+     */
     private void checkAnswer(int bClicked)
     {
         if (qG.getCorrectAnswer() == bClicked)
@@ -58,7 +120,13 @@ public class QuestionHandler : MonoBehaviour
         totalQuestions++;
         initializeQuestion();
     }
-
+    
+    /*
+     * a. initializeQuestion()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     private void initializeQuestion()
     {
         StopAllCoroutines();
@@ -72,6 +140,13 @@ public class QuestionHandler : MonoBehaviour
             endGame();
         }
     }
+    
+    /*
+     * a. countdown()
+     * b. yield return new WaitForSeconds()
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     
     private IEnumerator countdown()
     {
@@ -87,7 +162,13 @@ public class QuestionHandler : MonoBehaviour
         totalQuestions++;
         initializeQuestion();
     }
-
+    
+    /*
+     * a. endGame()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
     private void endGame()
     {
         result.text = numCorrect.ToString() + "/" + totalQuestions.ToString();
