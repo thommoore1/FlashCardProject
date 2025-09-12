@@ -62,6 +62,14 @@ public class QuestionGenerator : MonoBehaviour
      * c. Does not take in value
      * d. No exceptions thrown
      */
+
+    public void reset()
+    {
+        qText.text = "?";
+        aText.text = "";
+        bText.text = "";
+        cText.text = "";
+    }
     private int makeLowerWrongAnswer()
     {
         if (int2 > 1)
