@@ -52,7 +52,7 @@ public class Countdown : MonoBehaviour
     {
      ui.stopButtons();
      audioData.Play();
-     qGenerator.reset();
+     qHandler.Reset();
         StopAllCoroutines();
         StartCoroutine(countdown());
     }

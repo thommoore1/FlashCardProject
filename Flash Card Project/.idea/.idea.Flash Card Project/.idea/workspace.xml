@@ -6,16 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="87e8f55a-bb20-457e-9efc-af54ba29fe47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Cartoon Splat sound effect-[AudioTrimmer.com].mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Cartoon Splat sound effect-[AudioTrimmer.com].mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/01bf33010cd34ba188b7db6cfc091a5f.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/01bf33010cd34ba188b7db6cfc091a5f.resG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/3f43c8770f065cc9715776bb7536c1c2.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/3f43c8770f065cc9715776bb7536c1c2.resG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/490dfd1c7a63e97a750a4400ff3e3bc9.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/490dfd1c7a63e97a750a4400ff3e3bc9.resG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/7730b2ddd381e9c383c7921886095785.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/7730b2ddd381e9c383c7921886095785.resG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/7730b2ddd381e9c383c7921886095785.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/BurstOutput/Data/Plugins/x86_64/lib_burst_generated.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/FSTimeGet-4c6932c2e4fde4202b17ad9b7daf8deb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/PlayerBuildAnalyticsEvents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/StagingArea/WindowsPlayer.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/burst.link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/compute-shader-stripping.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/ea40309e3153970d5719afc0633abe4b.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/ea40309e3153970d5719afc0633abe4b.resG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/ea40309e3153970d5719afc0633abe4b.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/graphics-settings-stripping.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/shader-stripping.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +47,12 @@
     &quot;assignee&quot;: &quot;SamuelRokaw&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/thommoore1/FlashCardProject.git",
-    "accountId": "04302460-1146-4589-914e-a92ef38f2fdb"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/thommoore1/FlashCardProject.git&quot;,
+    &quot;accountId&quot;: &quot;04302460-1146-4589-914e-a92ef38f2fdb&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CanvasGroupDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,7 +71,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Sounds",
+    "git-widget-placeholder": "StopCoroutine",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,6 +132,7 @@
       <workItem from="1757450739088" duration="441000" />
       <workItem from="1757523429151" duration="3373000" />
       <workItem from="1757647429388" duration="304000" />
+      <workItem from="1757697873763" duration="637000" />
     </task>
     <servers />
   </component>

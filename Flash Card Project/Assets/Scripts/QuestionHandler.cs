@@ -72,7 +72,14 @@ public class QuestionHandler : MonoBehaviour
      */
     public void quit()
     {
-        Application.Quit();
+        if (UnityEditor.EditorApplication.isPlaying == true)
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 
 
@@ -86,6 +93,18 @@ public class QuestionHandler : MonoBehaviour
     {
         audioData.Play();
         checkAnswer(1);
+    }
+
+    /*
+     * a. Reset()
+     * b. Does not return a value
+     * c. Does not take in value
+     * d. No exceptions thrown
+     */
+    public void Reset()
+    {
+        StopAllCoroutines();
+        qG.reset();
     }
     
     /*
