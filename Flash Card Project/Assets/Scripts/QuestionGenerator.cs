@@ -20,9 +20,7 @@ public class QuestionGenerator : MonoBehaviour
     public TMP_Text aText; //text refrence for button a text
     public TMP_Text bText; //text refrence for button b text
     public TMP_Text cText; // text refrence for button c text
-    public int int1; // first value
-    public int int2; //second value
-    public int cAnswerPos; // position value of correct answer
+    public MultiplicationQuestion mq;
     
     /*
      * a. GenerateQuestion()
@@ -32,36 +30,29 @@ public class QuestionGenerator : MonoBehaviour
      */
     public void GenerateQuestion()
     {
-        int1 = Random.Range(1, 13);
-        int2 = Random.Range(1, 13);
-        qText.text = int1.ToString() + "x" + int2.ToString();
-        cAnswerPos = Random.Range(1, 4);
-        switch (cAnswerPos)
+        mq.GenerateQuestion();
+        qText.text = mq.questionString;
+        switch (mq.correctAnswerPos)
         {
             case 1:
-                aText.text = (int1 * int2).ToString();
-                bText.text = makeLowerWrongAnswer().ToString();
-                cText.text = makeHigherWrongAnswer().ToString();
+                aText.text = mq.correctAnswerString;
+                bText.text = mq.incorrectAnswerString;
+                cText.text = mq.incorrectAnswer2String;
                 break;
             case 2:
-                aText.text = makeLowerWrongAnswer().ToString();
-                bText.text = (int1 * int2).ToString();
-                cText.text = makeHigherWrongAnswer().ToString();
+                aText.text = mq.incorrectAnswerString;
+                bText.text = mq.correctAnswerString;
+                cText.text = mq.incorrectAnswer2String;
                 break;
             case 3:
-                aText.text = makeHigherWrongAnswer().ToString();
-                bText.text = makeLowerWrongAnswer().ToString();
-                cText.text = (int1 * int2).ToString();
+                aText.text = mq.incorrectAnswer2String;
+                bText.text = mq.incorrectAnswerString;
+                cText.text = mq.correctAnswerString;
                 break;
         }
     }
 
-    /*
-     * a. makeLowerWrongAnswer()
-     * b. Returns an int representing the lower end of the wrong answers
-     * c. Does not take in value
-     * d. No exceptions thrown
-     */
+    
 
     public void reset()
     {
@@ -70,35 +61,8 @@ public class QuestionGenerator : MonoBehaviour
         bText.text = "";
         cText.text = "";
     }
-    private int makeLowerWrongAnswer()
-    {
-        if (int2 > 1)
-        {
-            return int1 * (int2 - 1);
-        }
-        else
-        {
-            return int1 * (int2 + 2);
-        }
-    }
     
-    /*
-     * a. makeHigherWrongAnswer()
-     * b. Returns an int representing the higher end of the wrong answers
-     * c. Does not take in value
-     * d. No exceptions thrown
-     */
-    private int makeHigherWrongAnswer()
-    {
-        if (int2 < 12)
-        {
-            return int1 * (int2 + 1);
-        }
-        else
-        {
-            return int1 * (int2 - 2);
-        }
-    }
+    
     
     /*
      * a. getCorrectAnswer()
@@ -108,6 +72,6 @@ public class QuestionGenerator : MonoBehaviour
      */
     public int getCorrectAnswer()
     {
-        return cAnswerPos;
+        return mq.correctAnswerPos;
     }
 }
