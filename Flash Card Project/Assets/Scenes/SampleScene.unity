@@ -3680,6 +3680,7 @@ GameObject:
   - component: {fileID: 6612858367992113731}
   - component: {fileID: 6612858367992113732}
   - component: {fileID: 6612858367992113733}
+  - component: {fileID: 6612858367992113734}
   m_Layer: 0
   m_Name: GOD
   m_TagString: Untagged
@@ -3703,9 +3704,7 @@ MonoBehaviour:
   aText: {fileID: 1499111383}
   bText: {fileID: 1945119353}
   cText: {fileID: 365879417}
-  int1: 0
-  int2: 0
-  cAnswerPos: 0
+  mq: {fileID: 6612858367992113734}
 --- !u!114 &6612858367992113732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3742,6 +3741,23 @@ MonoBehaviour:
   otherText: {fileID: 1217533675}
   ui: {fileID: 6612858367992113732}
   qGenerator: {fileID: 6612858367992113731}
+--- !u!114 &6612858367992113734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513701003158295201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a5ce41917054a45bdd8eb7cfbb9945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiplicationQuestion
+  questionString: 
+  correctAnswerString: 
+  incorrectAnswerString: 
+  incorrectAnswer2String: 
+  correctAnswerPos: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
