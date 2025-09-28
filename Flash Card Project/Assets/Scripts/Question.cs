@@ -11,7 +11,7 @@
  */
 using UnityEngine;
 
-public class Question : MonoBehaviour
+public class Question 
 {
     public string questionString;
     public string correctAnswerString;
@@ -19,7 +19,17 @@ public class Question : MonoBehaviour
     public string incorrectAnswer2String;
     public int correctAnswerPos;
 
-    public virtual void GenerateQuestion()
+
+    public Question(string qs, string cas, string ias, string ias2, int cap)
+    {
+        questionString = qs;
+        correctAnswerString = cas;
+        incorrectAnswerString = ias;
+        incorrectAnswer2String = ias2;
+        correctAnswerPos = cap;
+    }
+    
+     protected virtual void GenerateQuestion()
     {
         correctAnswerPos = Random.Range(1, 4);
         GenerateCorrectAnswer();
@@ -35,4 +45,5 @@ public class Question : MonoBehaviour
     {
         
     }
+    
 }

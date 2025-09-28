@@ -40,7 +40,7 @@ public class Countdown : MonoBehaviour
      */
     public UI ui;
     
-    public QuestionGenerator qGenerator;
+    public QuizGenerator qGenerator;
     
     /*
      * a. StartButton()
@@ -50,9 +50,9 @@ public class Countdown : MonoBehaviour
      */
     public void startButton()
     {
-     ui.stopButtons();
-     audioData.Play();
-     qHandler.Reset();
+        ui.stopButtons();
+        audioData.Play();
+        qHandler.Reset();
         StopAllCoroutines();
         StartCoroutine(countdown());
     }

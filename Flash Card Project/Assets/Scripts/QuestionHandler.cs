@@ -45,11 +45,13 @@ public class QuestionHandler : MonoBehaviour
     /*
      * Used to generate questions
      */
-    public QuestionGenerator qG;
+    public QuizGenerator qG;
     /*
      * Used to effect AI
      */
     public UI ui;
+    
+    public int amountQuestions = 3;
     
     /*
      * a. startQuestion()
@@ -61,7 +63,7 @@ public class QuestionHandler : MonoBehaviour
     {
         totalQuestions = 0;
         numCorrect = 0;
-        initializeQuestion();
+        initializeQuiz();
     }
 
     /*
@@ -72,14 +74,11 @@ public class QuestionHandler : MonoBehaviour
      */
     public void quit()
     {
-        if (UnityEditor.EditorApplication.isPlaying == true)
+        if (UnityEditor.EditorApplication.isPlaying == true) //comment this if  out before building
         {
             UnityEditor.EditorApplication.isPlaying = false;
         }
-        else
-        {
-            Application.Quit();
-        }
+        Application.Quit();
     }
 
 
@@ -144,7 +143,8 @@ public class QuestionHandler : MonoBehaviour
             numCorrect++;
         }
         totalQuestions++;
-        initializeQuestion();
+        nextQuestion();
+        
     }
     
     /*
@@ -153,18 +153,25 @@ public class QuestionHandler : MonoBehaviour
      * c. Does not take in value
      * d. No exceptions thrown
      */
-    private void initializeQuestion()
+    private void nextQuestion()
     {
         StopAllCoroutines();
-        if(totalQuestions < 3)
+        if(totalQuestions < amountQuestions)
         {
-            qG.GenerateQuestion();
+            qG.nextQuestion();
             StartCoroutine(countdown());
         }
         else
         {
             endGame();
         }
+    }
+    private void initializeQuiz()
+    {
+        StopAllCoroutines();
+        qG.GenerateQuiz(amountQuestions);
+        StartCoroutine(countdown());
+        
     }
     
     /*
@@ -186,7 +193,7 @@ public class QuestionHandler : MonoBehaviour
         }
 
         totalQuestions++;
-        initializeQuestion();
+        nextQuestion();
     }
     
     /*

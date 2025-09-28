@@ -15,7 +15,14 @@ public class MultiplicationQuestion : Question
 {
     private int int1;
     private int int2;
-    public override void GenerateQuestion()
+
+    public MultiplicationQuestion() : base("", "" , "", "", 1)
+    {
+        GenerateQuestion();
+    }
+    
+    
+    protected override void GenerateQuestion()
     {
         int1 = Random.Range(1, 13);
         int2 = Random.Range(1, 13);
@@ -30,11 +37,13 @@ public class MultiplicationQuestion : Question
     
      //calls both wrong answer methods
     
-    protected override void GenerateIncorrectAnswers()
+     protected override void GenerateIncorrectAnswers()
     {
         incorrectAnswer2String = makeHigherWrongAnswer().ToString();
         incorrectAnswerString = makeLowerWrongAnswer().ToString();
     }
+    
+    
     /*
      * a. makeLowerWrongAnswer()
      * b. Returns an int representing the lower end of the wrong answers
