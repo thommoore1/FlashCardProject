@@ -83,15 +83,15 @@ public class QuestionHandler : MonoBehaviour
 
 
     /*
-     * a. buttonAClicked()
+     * a. buttonClicked()
      * b. Does not return a value
-     * c. Does not take in value
+     * c. Takes in value
      * d. No exceptions thrown
      */
-    public void buttonAClicked()
+    public void buttonClicked(int button)
     {
         audioData.Play();
-        checkAnswer(1);
+        checkAnswer(button);
     }
 
     /*
@@ -106,29 +106,6 @@ public class QuestionHandler : MonoBehaviour
         qG.reset();
     }
     
-    /*
-     * a. buttonBClicked()
-     * b. Does not return a value
-     * c. Does not take in value
-     * d. No exceptions thrown
-     */
-    public void buttonBClicked()
-    {
-        audioData.Play();
-        checkAnswer(2);
-    }
-    
-    /*
-     * a. buttonCClicked()
-     * b. Does not return a value
-     * c. Does not take in value
-     * d. No exceptions thrown
-     */
-    public void buttonCClicked()
-    {
-        audioData.Play();
-        checkAnswer(3);
-    }
 
     /*
      * a. checkAnswer()
