@@ -33,6 +33,10 @@ public class QuestionHandler : MonoBehaviour
      * Used to display time left to answer question
      */
     public TMP_Text timer;
+    //used to access current time to answer
+    public int currentTime;
+    //used to set time to answer
+    private int initialTime = 10;
     /*
      * Used to represent game state
      */
@@ -161,12 +165,12 @@ public class QuestionHandler : MonoBehaviour
     private IEnumerator countdown()
     {
         otherText.text = "question ends";
-        int time = 10;
+        currentTime = initialTime;
         while (time > 0)
         {
-            timer.text = time.ToString();
+            timer.text = currentTime.ToString();
             yield return new WaitForSeconds(1);
-            time--;
+            currentTime--;
         }
 
         totalQuestions++;
