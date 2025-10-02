@@ -166,7 +166,7 @@ public class QuestionHandler : MonoBehaviour
     {
         otherText.text = "question ends";
         currentTime = initialTime;
-        while (time > 0)
+        while (currentTime > 0)
         {
             timer.text = currentTime.ToString();
             yield return new WaitForSeconds(1);
