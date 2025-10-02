@@ -14,6 +14,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class QuestionHandler : MonoBehaviour
 {
@@ -56,7 +57,8 @@ public class QuestionHandler : MonoBehaviour
     public UI ui;
     
     public int amountQuestions = 3;
-    
+
+    public static event Action<bool,float> AnswerSelected;
     /*
      * a. startQuestion()
      * b. Does not return a value
@@ -122,6 +124,7 @@ public class QuestionHandler : MonoBehaviour
         if (qG.getCorrectAnswer() == bClicked)
         {
             numCorrect++;
+            AnswerSelected?.Invoke(true, currentTime);
         }
         totalQuestions++;
         nextQuestion();
@@ -166,7 +169,7 @@ public class QuestionHandler : MonoBehaviour
     {
         otherText.text = "question ends";
         currentTime = initialTime;
-        while (time > 0)
+        while (currentTime > 0)
         {
             timer.text = currentTime.ToString();
             yield return new WaitForSeconds(1);
