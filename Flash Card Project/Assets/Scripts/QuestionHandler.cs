@@ -78,6 +78,7 @@ public class QuestionHandler : MonoBehaviour
      */
     public void quit()
     {
+        Achievements.SaveData();
         if (UnityEditor.EditorApplication.isPlaying == true) //comment this if  out before building
         {
             UnityEditor.EditorApplication.isPlaying = false;

@@ -1,0 +1,46 @@
+{
+  "Achievements": [
+    {
+      "AchievementType": "PlatinumMath",
+      "Title": "Platinum Math",
+      "Description": "Earn all achievements",
+      "Status": 0
+    },
+    {
+      "AchievementType": "Mathematician",
+      "Title": "Mathematician",
+      "Description": "Play for 20 minutes or more",
+      "Status": 0
+    },
+    {
+      "AchievementType": "BuzzerBeater",
+      "Title": "Buzzer Beater",
+      "Description": "Answer any question correctly at the last second",
+      "Status": 0
+    },
+    {
+      "AchievementType": "GoldStar",
+      "Title": "Gold Star",
+      "Description": "Answer all questions in a round x times",
+      "Status": 0
+    },
+    {
+      "AchievementType": "MathMaster",
+      "Title": "Math Master",
+      "Description": "Answer x questions correctly",
+      "Status": 0
+    },
+    {
+      "AchievementType": "Speedster",
+      "Title": "Speedster",
+      "Description": "Answer all questions in a round correctly in less than 10 seconds",
+      "Status": 0
+    },
+    {
+      "AchievementType": "Huh",
+      "Title": "Huh?",
+      "Description": "During a round click on the equation",
+      "Status": 0
+    }
+  ]
+}

@@ -34,8 +34,11 @@ public class UI : MonoBehaviour
     public Button buttonA;
     public Button buttonB;
     public Button buttonC;
-    
-    
+
+    public void Start()
+    {
+        Achievements.ReadData();
+    }
     /*
      * a. ShowsGame()
      * b. Does not return a value

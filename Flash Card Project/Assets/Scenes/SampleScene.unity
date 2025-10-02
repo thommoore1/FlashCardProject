@@ -3648,6 +3648,7 @@ MonoBehaviour:
   totalQuestions: 0
   numCorrect: 0
   timer: {fileID: 536768456}
+  currentTime: 0
   otherText: {fileID: 1217533675}
   result: {fileID: 332710244}
   qG: {fileID: 6612858367992113731}
