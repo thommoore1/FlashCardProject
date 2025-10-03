@@ -2204,7 +2204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031579355}
-  - component: {fileID: 1031579354}
+  - component: {fileID: 1031579356}
   m_Layer: 0
   m_Name: BuzzerBeater
   m_TagString: Untagged
@@ -2212,22 +2212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1031579354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031579353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0299054a38046eb45a5f1ec841ef75ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Achievement
-  title: Buzzer Beater
-  description: Answer a question correctly in the last second
-  unlockTimeThreshold: 1
-  qH: {fileID: 4721975634038465568}
 --- !u!4 &1031579355
 Transform:
   m_ObjectHideFlags: 0
@@ -2243,6 +2227,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031579356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031579353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada509b5102524f41aa67a24ed685234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BBObserver
 --- !u!1 &1116991103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,53 +3463,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920983778}
   m_CullTransparentMesh: 1
---- !u!1 &1941904580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1941904582}
-  - component: {fileID: 1941904581}
-  m_Layer: 0
-  m_Name: achievementManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1941904581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941904580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d78e7190d94ab142a6f572bab7c0ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AchievementRegistry
-  mappings:
-  - type: 0
-    achievement: {fileID: 1031579354}
---- !u!4 &1941904582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941904580}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 781.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945119351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,5 +3797,4 @@ SceneRoots:
   - {fileID: 1695987193}
   - {fileID: 181344826}
   - {fileID: 1116991105}
-  - {fileID: 1941904582}
   - {fileID: 1031579355}
