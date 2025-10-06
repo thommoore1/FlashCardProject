@@ -2324,6 +2324,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1131804553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131804555}
+  - component: {fileID: 1131804554}
+  m_Layer: 0
+  m_Name: AchievementManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1131804554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131804553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a930dc8ddb0c435c9ec76ff9b082df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementManager
+  achievements:
+  - {fileID: 11400000, guid: f21b26e4c49614ea5ad2d35cb7c9ce45, type: 2}
+--- !u!4 &1131804555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131804553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 932.425, y: 521.325, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217533673
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,11 +3694,13 @@ MonoBehaviour:
   totalQuestions: 0
   numCorrect: 0
   timer: {fileID: 536768456}
+  currentTime: 0
   otherText: {fileID: 1217533675}
   result: {fileID: 332710244}
   qG: {fileID: 6612858367992113731}
   ui: {fileID: 6612858367992113732}
   amountQuestions: 3
+  timeSpent: 0
 --- !u!4 &5979123063439478707
 Transform:
   m_ObjectHideFlags: 0
@@ -3752,3 +3800,4 @@ SceneRoots:
   - {fileID: 1695987193}
   - {fileID: 181344826}
   - {fileID: 1116991105}
+  - {fileID: 1131804555}

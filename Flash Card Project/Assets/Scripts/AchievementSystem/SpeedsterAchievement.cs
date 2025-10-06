@@ -16,21 +16,12 @@ public class SpeedsterAchievement : Achievement
         GameEvents.OnRoundCompleted -= HandleRoundCompleted;
     }
 
-    private void HandleRoundCompleted(int correct, int total)
+    private void HandleRoundCompleted(int correct, int total, int time)
     {
-        if (correct == total)
+        if (correct == total && time <= 10)
         {
-            perfectRounds++;
-            Save();
 
-            Debug.Log($"✅ Perfect round! Total perfects: {perfectRounds}");
-
-            if (perfectRounds == 1)
-                Debug.Log("🏅 Achievement Unlocked: Gold Star I (1 Perfect Round)");
-            else if (perfectRounds == 10)
-                Debug.Log("🏅 Achievement Unlocked: Gold Star II (10 Perfect Rounds)");
-            else if (perfectRounds == 30)
-                Debug.Log("🏅 Achievement Unlocked: Gold Star III (30 Perfect Rounds)");
+            Debug.Log("Achievement acquired: Speedster");
         }
         else
         {
@@ -40,12 +31,9 @@ public class SpeedsterAchievement : Achievement
 
     public override void Save()
     {
-        PlayerPrefs.SetInt("GoldStarPerfectRounds", perfectRounds);
-        PlayerPrefs.Save();
     }
 
     public override void Load()
     {
-        perfectRounds = PlayerPrefs.GetInt("GoldStarPerfectRounds", 0);
     }
 }

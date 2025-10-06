@@ -2,7 +2,7 @@
  ACHIEVEMENT SYSTEM - GOLD STAR EXAMPLE
 =====================================================
 
-Author(s): Team KITTY MEOW MEOW
+Author(s): Team KITTY MEOW MEOW (Some amendments for speedster class by Tom)
 Purpose:  Shared modular achievement system for integration between groups.
 
 -----------------------------------------------------
@@ -23,10 +23,9 @@ Purpose:  Shared modular achievement system for integration between groups.
    - Example events: OnRoundCompleted, OnPerfectRound, OnQuestionAnswered, etc.
    - Call these events from your own gameplay scripts when needed.
 
-4. GoldStarAchievement.cs
+4. Speedster.cs
    - Example implementation of an achievement with progression.
-   - Unlocks at 1, 10, and 30 perfect rounds.
-   - Demonstrates how to handle multi-tier achievements.
+   - Unlocks at perfect round in under 10 seconds
 
 -----------------------------------------------------
 ⚙️ HOW TO INTEGRATE INTO YOUR GAME
@@ -47,7 +46,7 @@ Purpose:  Shared modular achievement system for integration between groups.
 4. **Connect Game Events**
    - Your game should call the appropriate GameEvents when something happens.
      For example:
-       GameEvents.OnRoundCompleted?.Invoke(correctAnswers, totalQuestions);
+       GameEvents.OnRoundCompleted?.Invoke(correctAnswers, totalQuestions, timeTaken);
    - The AchievementManager will forward this to all subscribed achievements.
 
 5. **Testing Progress**
@@ -58,23 +57,12 @@ Purpose:  Shared modular achievement system for integration between groups.
 -----------------------------------------------------
 🏆 GOLD STAR ACHIEVEMENT LOGIC
 -----------------------------------------------------
-- Unlocks when a player completes a “perfect round” (all answers correct).
-- Tracks how many times this has been achieved.
-- Unlock tiers:
-    • Tier 1 → 1 perfect round
-    • Tier 2 → 10 perfect rounds
-    • Tier 3 → 30 perfect rounds
+- Unlocks when a player completes a “perfect round” (all answers correct) in less than 10 seconds
 
 -----------------------------------------------------
 💾 SAVE / LOAD DETAILS
 -----------------------------------------------------
-- Achievements use PlayerPrefs for lightweight persistence.
-- Example:
-      PlayerPrefs.SetInt("PerfectRounds", value);
-      PlayerPrefs.Save();
-
-      int rounds = PlayerPrefs.GetInt("PerfectRounds", 0);
-- Each achievement manages its own save key.
+- Not currently implmented for this acvhievement
 
 -----------------------------------------------------
 📢 EXTENDING THE SYSTEM
