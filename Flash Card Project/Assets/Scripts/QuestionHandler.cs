@@ -122,6 +122,11 @@ public class QuestionHandler : MonoBehaviour
         if (qG.getCorrectAnswer() == bClicked)
         {
             numCorrect++;
+            AchievementEvents.OnQuestionAnswered?.Invoke(new AchievementEvents.OnQuestionAnsweredArgs()
+            {
+                AnsweredCorrectly =  true,
+                TimeRemaining =  currentTime,
+            });
         }
         totalQuestions++;
         nextQuestion();
