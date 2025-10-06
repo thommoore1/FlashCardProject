@@ -56,6 +56,7 @@ public class QuestionHandler : MonoBehaviour
     public UI ui;
     
     public int amountQuestions = 3;
+    public int timeSpent = 0;
     
     /*
      * a. startQuestion()
@@ -65,6 +66,7 @@ public class QuestionHandler : MonoBehaviour
      */
     public void startQuestion()
     {
+        timeSpent = 0;
         totalQuestions = 0;
         numCorrect = 0;
         initializeQuiz();
@@ -136,6 +138,7 @@ public class QuestionHandler : MonoBehaviour
      */
     private void nextQuestion()
     {
+        timeSpent += (initialTime - currentTime);
         StopAllCoroutines();
         if(totalQuestions < amountQuestions)
         {
@@ -185,6 +188,12 @@ public class QuestionHandler : MonoBehaviour
      */
     private void endGame()
     {
+        AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
+        {
+            NumQuestionsAnswered = totalQuestions,
+            NumCorrectQuestions = numCorrect,
+            TotalTimeTaken = timeSpent,
+        });
         result.text = numCorrect.ToString() + "/" + totalQuestions.ToString();
         ui.HidesGame();
         ui.ShowsGameResults();
