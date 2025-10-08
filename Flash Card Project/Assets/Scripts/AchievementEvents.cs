@@ -31,4 +31,7 @@ public static class AchievementEvents
     
     // On Second Passed
     public static Action OnSecondPassed;
+    
+    // On All Achievments Obtained
+    public static Action OnAllAchievementObtained;
 }

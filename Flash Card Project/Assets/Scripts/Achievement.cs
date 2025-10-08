@@ -10,12 +10,15 @@ public abstract class Achievement : ScriptableObject
 
     protected string AchievementSaveKey => GetType().Name;
     
+    public bool IsObtained { get; protected set; }
+    
     public abstract void Subscribe();
     public abstract void Unsubscribe();
     
     protected void GetAchievement()
     {
         Debug.Log($"{AchievementTitle} Achieved!");
+        IsObtained = true;
         AchievementEvents.OnAchievementGet?.Invoke(new AchievementEvents.OnAchievementGetArgs
         {
             AchievementObtained = this
