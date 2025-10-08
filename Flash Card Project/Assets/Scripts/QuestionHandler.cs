@@ -51,10 +51,11 @@ public class QuestionHandler : MonoBehaviour
      */
     public QuizGenerator qG;
     /*
-     * Used to effect AI
+     * Used to effect UI
      */
     public UI ui;
     
+    //amount of questions to answer
     public int amountQuestions = 3;
     
     /*

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "BuzzerBeater", menuName = "Scriptable Objects/BuzzerBeater")]
+[CreateAssetMenu(menuName = "Achievements/" + nameof(BuzzerBeater), fileName = nameof(BuzzerBeater))]
 public class BuzzerBeater : Achievement
 {
     private bool _achievementGotten;
