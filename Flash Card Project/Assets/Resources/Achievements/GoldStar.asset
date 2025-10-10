@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cecfdcf13256754599a1a53b05d6382, type: 3}
   m_Name: GoldStar
   m_EditorClassIdentifier: Assembly-CSharp::GoldStar
-  Description: Answer all questions in a round correctly [1, 10, 30] times
-  Thumbnail: {fileID: 0}
+  _description: 
+  _thumbnail: {fileID: 0}
   _tiers:
-  - Requirement: 1
+  - Requirement: 3
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
+    Achieved: 1
+  - Requirement: 6
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
     Achieved: 0
-  - Requirement: 10
-    Achieved: 0
-  - Requirement: 30
+  - Requirement: 9
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
     Achieved: 0

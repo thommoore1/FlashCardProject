@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d638f3c259f7e546a1f6b8c548a9f2d, type: 3}
   m_Name: MathMaster
   m_EditorClassIdentifier: Assembly-CSharp::MathMaster
-  Description: Answer [10,50,100] questions correctly
-  Thumbnail: {fileID: 0}
+  _description: 
+  _thumbnail: {fileID: 0}
   _tiers:
-  - Requirement: 10
-    Achieved: 0
-  - Requirement: 50
-    Achieved: 0
-  - Requirement: 100
-    Achieved: 0
+  - Requirement: 1
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
+    Achieved: 1
+  - Requirement: 2
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
+    Achieved: 1
+  - Requirement: 3
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
+    Achieved: 1

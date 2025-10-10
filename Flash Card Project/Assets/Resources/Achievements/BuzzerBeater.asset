@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e734b5a9b0fa9614295e749a4bdffbde, type: 3}
   m_Name: BuzzerBeater
   m_EditorClassIdentifier: Assembly-CSharp::BuzzerBeater
-  Description: Answer a question correctly in the last second
-  Thumbnail: {fileID: 0}
+  _description: 
+  _thumbnail: {fileID: 0}
