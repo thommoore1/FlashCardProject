@@ -37,6 +37,8 @@ public class QuestionHandler : MonoBehaviour
     public int currentTime;
     //used to set time to answer
     private int initialTime = 10;
+
+    private int timeSpent = 0;
     /*
      * Used to represent game state
      */
@@ -51,10 +53,11 @@ public class QuestionHandler : MonoBehaviour
      */
     public QuizGenerator qG;
     /*
-     * Used to effect AI
+     * Used to effect UI
      */
     public UI ui;
     
+    //amount of questions to answer
     public int amountQuestions = 3;
     
     /*
@@ -108,6 +111,7 @@ public class QuestionHandler : MonoBehaviour
     {
         StopAllCoroutines();
         qG.reset();
+        timeSpent = 0;
     }
     
 
@@ -122,7 +126,13 @@ public class QuestionHandler : MonoBehaviour
         if (qG.getCorrectAnswer() == bClicked)
         {
             numCorrect++;
+            AchievementEvents.OnQuestionAnswered?.Invoke(new AchievementEvents.OnQuestionAnsweredArgs()
+            {
+                AnsweredCorrectly =  true,
+                TimeRemaining =  currentTime,
+            });
         }
+        timeSpent = timeSpent + (10 - currentTime);
         totalQuestions++;
         nextQuestion();
         
@@ -173,6 +183,7 @@ public class QuestionHandler : MonoBehaviour
             currentTime--;
         }
 
+        timeSpent = timeSpent + 10;
         totalQuestions++;
         nextQuestion();
     }
@@ -188,5 +199,11 @@ public class QuestionHandler : MonoBehaviour
         result.text = numCorrect.ToString() + "/" + totalQuestions.ToString();
         ui.HidesGame();
         ui.ShowsGameResults();
+        AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
+        {
+            NumQuestionsAnswered = totalQuestions,
+            NumCorrectQuestions = numCorrect,
+            TotalTimeTaken = timeSpent,
+        });
     }
 }
