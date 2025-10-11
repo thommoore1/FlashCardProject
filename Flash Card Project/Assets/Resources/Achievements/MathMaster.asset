@@ -15,15 +15,15 @@ MonoBehaviour:
   _description: 
   _thumbnail: {fileID: 0}
   _tiers:
-  - Requirement: 1
-    TierDescription: 
-    TierThumbnail: {fileID: 0}
-    Achieved: 1
-  - Requirement: 2
-    TierDescription: 
-    TierThumbnail: {fileID: 0}
-    Achieved: 1
   - Requirement: 3
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
+    Achieved: 1
+  - Requirement: 5
+    TierDescription: 
+    TierThumbnail: {fileID: 0}
+    Achieved: 1
+  - Requirement: 9
     TierDescription: 
     TierThumbnail: {fileID: 0}
     Achieved: 1
