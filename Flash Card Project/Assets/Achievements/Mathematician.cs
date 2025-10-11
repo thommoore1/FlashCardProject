@@ -17,7 +17,7 @@ public class Mathematician : Achievement
     private void OnSecondPassed()
     {
         totalSeconds++;
-        if (totalSeconds >= 12)
+        if (totalSeconds >= 30)
         {
             GetAchievement();
         }

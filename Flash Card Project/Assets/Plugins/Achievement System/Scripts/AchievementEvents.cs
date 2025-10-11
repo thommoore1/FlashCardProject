@@ -40,4 +40,9 @@ public static class AchievementEvents
     public static Action OnSecondPassed;
     
     public static Action OnAllAchievementObtained;
+
+    public static Action<OnRoundStartArgs> OnRoundStart;
+    public struct OnRoundStartArgs
+    {
+    }
 }

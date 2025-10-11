@@ -30,6 +30,7 @@ public class UI : MonoBehaviour
 
     
     public CanvasGroup achievementMenuGroup;
+    public CanvasGroup resultsAchievementsGroup;
     
     /*
      * buttons A B C for answering flash cards
@@ -142,6 +143,27 @@ public class UI : MonoBehaviour
      HidesGameResults();
      HidesGame();
      achievementMenuHide();
-     
+    }
+    
+    private void ShowResultsAchievements()
+    {
+        CanvasGroupDisplayer.Show(resultsAchievementsGroup);
+    }
+    
+    private void hideResultsAchievements()
+    {
+        CanvasGroupDisplayer.Hide(resultsAchievementsGroup);
+    }
+
+    public void showsResultsAchievements()
+    {
+     ShowResultsAchievements();
+     HidesGameResults();
+    }
+    
+    public void hidesResultsAchievements()
+    {
+     hideResultsAchievements();
+     ShowsGameResults();
     }
 }
