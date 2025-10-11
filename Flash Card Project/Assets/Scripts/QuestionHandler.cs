@@ -109,6 +109,7 @@ public class QuestionHandler : MonoBehaviour
      */
     public void Reset()
     {
+        AchievementEvents.OnRoundStart?.Invoke(new AchievementEvents.OnRoundStartArgs());
         StopAllCoroutines();
         qG.reset();
         timeSpent = 0;

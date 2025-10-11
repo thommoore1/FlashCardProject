@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb6de67b6e79f046a25df3f6c9bbd5b, type: 3}
   m_Name: Mathematician
   m_EditorClassIdentifier: Assembly-CSharp::Mathematician
-  Description: Play for 20 minutes or more
-  Thumbnail: {fileID: 0}
+  _description: 
+  _thumbnail: {fileID: 0}

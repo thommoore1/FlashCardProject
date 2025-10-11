@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92eebfa0c79a4194fad425c35a04affb, type: 3}
   m_Name: Huh
   m_EditorClassIdentifier: Assembly-CSharp::Huh
-  Description: Click on the question
-  Thumbnail: {fileID: 0}
+  _description: 
+  _thumbnail: {fileID: 0}
