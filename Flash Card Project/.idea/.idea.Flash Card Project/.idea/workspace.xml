@@ -6,10 +6,47 @@
   <component name="ChangeListManager">
     <list default="true" id="87e8f55a-bb20-457e-9efc-af54ba29fe47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/BuzzerBeater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/BuzzerBeater.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/GoldStar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/GoldStar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/Huh.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/Huh.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/MathMaster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/MathMaster.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/Mathematician.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/Mathematician.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/PlatinumMath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/PlatinumMath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/Speedster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Achievements/Speedster.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/BuzzerBeater.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/BuzzerBeater.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/GoldStar.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/GoldStar.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Huh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Huh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/MathMaster.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/MathMaster.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Mathematician.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Mathematician.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PlatinumMath.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PlatinumMath.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Speedster.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Speedster.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AchievementEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AchievementEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AchievementChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AchievementChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AchievementEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AchievementEvents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AchievementManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AchievementManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TieredAchievement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TieredAchievement.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +70,6 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Achievements/GoldStar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Achievements/Speedster.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AchievementChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CanvasGroupDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HuhButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -141,6 +175,9 @@
       <workItem from="1759723956948" duration="791000" />
       <workItem from="1759771423659" duration="427000" />
       <workItem from="1759951792008" duration="4478000" />
+      <workItem from="1760115350487" duration="42000" />
+      <workItem from="1760116664892" duration="144000" />
+      <workItem from="1760116854515" duration="2273000" />
     </task>
     <servers />
   </component>

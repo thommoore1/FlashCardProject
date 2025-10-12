@@ -34,7 +34,7 @@ public class AchievementChecker : MonoBehaviour
         bool allCompleted = true;
         foreach (Achievement achievement in manager.Achievements)
         {
-            if (!achievement.IsObtained && achievement.AchievementTitle != "PlatinumMath")
+            if (!achievement.checkStatus() && achievement.AchievementTitle != "PlatinumMath")
             {
                 allCompleted = false;
             }

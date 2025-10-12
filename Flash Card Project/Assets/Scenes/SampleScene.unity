@@ -3266,6 +3266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1701062997}
   - component: {fileID: 1701062996}
+  - component: {fileID: 1701062999}
   - component: {fileID: 1701062998}
   m_Layer: 0
   m_Name: achievemnthandler
@@ -3313,6 +3314,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ece56c05ec880b4bb9b2fd8bc1c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AchievementChecker
+--- !u!114 &1701062999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701062995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8374965083f71e439cf6fb72939f04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp-firstpass::AchievementEventsLogger
+  logAchievementGet: 1
+  logTieredAchievementProgressed: 1
+  logQuestionAnswered: 1
+  logRoundEnded: 1
+  logHuhButton: 1
 --- !u!1 &1701812647
 GameObject:
   m_ObjectHideFlags: 0

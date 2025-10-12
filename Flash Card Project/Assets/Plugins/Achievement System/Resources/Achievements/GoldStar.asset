@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cecfdcf13256754599a1a53b05d6382, type: 3}
+  m_Name: GoldStar
+  m_EditorClassIdentifier: Assembly-CSharp-firstpass::GoldStar
+  _description: 
+  _thumbnail: {fileID: 0}
+  _tiers:
+  - Requirement: 1
+    TierDescription: Answer all questions in a round correctly 1 times
+    TierThumbnail: {fileID: 0}
+    Achieved: 0
+  - Requirement: 10
+    TierDescription: Answer all questions in a round correctly 10 times
+    TierThumbnail: {fileID: 0}
+    Achieved: 0
+  - Requirement: 30
+    TierDescription: Answer all questions in a round correctly 30 times
+    TierThumbnail: {fileID: 0}
+    Achieved: 0
