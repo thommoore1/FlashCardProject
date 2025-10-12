@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cecfdcf13256754599a1a53b05d6382, type: 3}
   m_Name: GoldStar
   m_EditorClassIdentifier: Assembly-CSharp::GoldStar
-  _description: 
-  _thumbnail: {fileID: 0}
+  _description: Answer all questions in a round correctly 1, 10, and 30 times
+  _thumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}
   _tiers:
   - Requirement: 1
-    TierDescription: 
-    TierThumbnail: {fileID: 0}
+    TierDescription: Answer all questions in a round correctly 1 time
+    TierThumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}
     Achieved: 1
-  - Requirement: 2
-    TierDescription: 
-    TierThumbnail: {fileID: 0}
-    Achieved: 1
-  - Requirement: 3
-    TierDescription: 
-    TierThumbnail: {fileID: 0}
-    Achieved: 1
+  - Requirement: 10
+    TierDescription: Answer all questions in a round correctly 10 times
+    TierThumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}
+    Achieved: 0
+  - Requirement: 30
+    TierDescription: Answer all questions in a round correctly 30 times
+    TierThumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}
+    Achieved: 0
