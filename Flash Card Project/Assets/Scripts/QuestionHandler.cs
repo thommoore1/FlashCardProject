@@ -81,10 +81,10 @@ public class QuestionHandler : MonoBehaviour
      */
     public void quit()
     {
-        if (UnityEditor.EditorApplication.isPlaying == true) //comment this if  out before building
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
+        //if (UnityEditor.EditorApplication.isPlaying == true) //comment this if  out before building
+        //{
+        //    UnityEditor.EditorApplication.isPlaying = false;
+        //}
         Application.Quit();
     }
 
