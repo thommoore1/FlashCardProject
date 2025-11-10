@@ -26,6 +26,11 @@ public class SubtractionQuestion : Question
     {
         int1 = Random.Range(1, 13);
         int2 = Random.Range(1, 13);
+        while (int1 - int2   < 0)
+        {
+            int1 = Random.Range(1, 13);
+            int2 = Random.Range(1, 13);
+        }
         base.GenerateQuestion();
         questionString = int1.ToString() + "-" + int2.ToString();
     }

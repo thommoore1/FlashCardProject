@@ -24,8 +24,13 @@ public class DivisionQuestion : Question
     
     protected override void GenerateQuestion()
     {
-        int1 = Random.Range(1, 13);
-        int2 = Random.Range(1, 13);
+        int1 = Random.Range(1, 145);
+        int2 = Random.Range(1, 145);
+        while (int1 % int2   != 0)
+        {
+            int1 = Random.Range(1, 145);
+            int2 = Random.Range(1, 145);
+        }
         base.GenerateQuestion();
         questionString = int1.ToString() + "/" + int2.ToString();
     }
@@ -54,11 +59,11 @@ public class DivisionQuestion : Question
     {
         if (int2 > 1)
         {
-            return int1 / (int2 - 1);
+            return int1 / (int2) - 1;
         }
         else
         {
-            return int1 / (int2 + 2);
+            return int1 / (int2 ) + 2;
         }
     }
     /*
@@ -71,11 +76,11 @@ public class DivisionQuestion : Question
     {
         if (int2 < 12)
         {
-            return int1 / (int2 + 1);
+            return int1 / (int2) + 1;
         }
         else
         {
-            return int1 / (int2 - 2);
+            return int1 / (int2) - 2;
         }
     }
 }
