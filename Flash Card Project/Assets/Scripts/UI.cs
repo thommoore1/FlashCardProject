@@ -28,6 +28,8 @@ public class UI : MonoBehaviour
      */
     public CanvasGroup gameResultsGroup;
 
+    public CanvasGroup quizSelectionGroup;
+
     
     public CanvasGroup achievementMenuGroup;
     public CanvasGroup resultsAchievementsGroup;
@@ -165,5 +167,15 @@ public class UI : MonoBehaviour
     {
      hideResultsAchievements();
      ShowsGameResults();
+    }
+
+    public void ShowQuizSelection()
+    {
+        CanvasGroupDisplayer.Show(quizSelectionGroup);
+    }
+
+    public void HideQuizSelection()
+    {
+        CanvasGroupDisplayer.Hide(quizSelectionGroup);
     }
 }
