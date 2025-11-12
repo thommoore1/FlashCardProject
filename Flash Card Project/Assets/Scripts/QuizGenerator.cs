@@ -31,13 +31,13 @@ public class QuizGenerator : MonoBehaviour
      * d. No exceptions thrown
      */
 
-    public void GenerateQuiz(int numQuestions)
+    public void GenerateQuiz(int numQuestions, int questionType)
     {
         quiz = new List<Question>();
         qIndex = 0;
         for (int i = 0; i < numQuestions; i++)
         {
-            addQuestion();
+            addQuestion(questionType);
         }
         displayQuestion();
     }
@@ -54,9 +54,37 @@ public class QuizGenerator : MonoBehaviour
         displayQuestion();
     }
 
-    private void addQuestion()
+    private void addQuestion(int questionType)
     {
-        quiz.Add(new MultiplicationQuestion());
+        if (questionType != 5)
+        {
+            pickQuestion(questionType);
+        }
+        else
+        {
+            int randomQ = Random.Range(1, 5);
+            pickQuestion(randomQ);
+        }
+        
+    }
+
+    private void pickQuestion(int questionType)
+    {
+        switch (questionType)
+        {
+            case 1:
+                quiz.Add(new AdditionQuestion());
+                break;
+            case 2:
+                quiz.Add(new SubtractionQuestion());
+                break;
+            case 3:
+                quiz.Add(new MultiplicationQuestion());
+                break;
+            case 4:
+                quiz.Add(new DivisionQuestion());
+                break;
+        }
     }
     
     private void displayQuestion()

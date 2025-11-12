@@ -60,6 +60,9 @@ public class QuestionHandler : MonoBehaviour
     //amount of questions to answer
     public int amountQuestions = 3;
     
+    //which type of quiz is it, 1-a,2-s,3-m,4-d,5-all
+    public int quizType;
+    
     /*
      * a. startQuestion()
      * b. Does not return a value
@@ -73,6 +76,12 @@ public class QuestionHandler : MonoBehaviour
         initializeQuiz();
     }
 
+    //sets the quiz type
+    public void SetQuizType(int qT)
+    {
+        quizType = qT;
+    }
+    
     /*
      * a. quit()
      * b. Does not return a value
@@ -161,7 +170,7 @@ public class QuestionHandler : MonoBehaviour
     private void initializeQuiz()
     {
         StopAllCoroutines();
-        qG.GenerateQuiz(amountQuestions);
+        qG.GenerateQuiz(amountQuestions, quizType);
         StartCoroutine(countdown());
         
     }
@@ -202,6 +211,7 @@ public class QuestionHandler : MonoBehaviour
         ui.ShowsGameResults();
         AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
         {
+            QuizType = quizType,
             NumQuestionsAnswered = totalQuestions,
             NumCorrectQuestions = numCorrect,
             TotalTimeTaken = timeSpent,

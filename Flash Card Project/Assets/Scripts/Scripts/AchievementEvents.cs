@@ -20,6 +20,7 @@ public static class AchievementEvents
     public static Action<OnRoundEndedArgs> OnRoundEnded;
     public struct OnRoundEndedArgs
     {
+        public int QuizType;
         public int NumQuestionsAnswered;
         public int NumCorrectQuestions;
         public float TotalTimeTaken;

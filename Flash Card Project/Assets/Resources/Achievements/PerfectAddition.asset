@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fd03410a93d4147b22709fb2586123, type: 3}
+  m_Name: PerfectAddition
+  m_EditorClassIdentifier: Assembly-CSharp::PerfectAddition
+  _description: Get a perfect score in an addition round.
+  _thumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}
