@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="87e8f55a-bb20-457e-9efc-af54ba29fe47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DivisionQuestion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DivisionQuestion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SubtractionQuestion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SubtractionQuestion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/AchievementEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scripts/AchievementEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +31,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/PerfectAddition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/PerfectMath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/PerfectMultiplication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CanvasGroupDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HuhButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuizGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/Achievement System/AchievementEvents.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -141,6 +145,8 @@
       <workItem from="1760374623032" duration="694000" />
       <workItem from="1762797862270" duration="1578000" />
       <workItem from="1762799585079" duration="828000" />
+      <workItem from="1762970635067" duration="41000" />
+      <workItem from="1762970685238" duration="1020000" />
     </task>
     <servers />
   </component>

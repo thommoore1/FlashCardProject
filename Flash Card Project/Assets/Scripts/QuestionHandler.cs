@@ -60,7 +60,7 @@ public class QuestionHandler : MonoBehaviour
     //amount of questions to answer
     public int amountQuestions = 3;
     
-    //which type of quiz is it
+    //which type of quiz is it, 1-a,2-s,3-m,4-d,5-all
     public int quizType;
     
     /*
@@ -211,6 +211,7 @@ public class QuestionHandler : MonoBehaviour
         ui.ShowsGameResults();
         AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
         {
+            QuizType = quizType,
             NumQuestionsAnswered = totalQuestions,
             NumCorrectQuestions = numCorrect,
             TotalTimeTaken = timeSpent,
