@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0fd1adb5e7d3894080ee022f2169b4e, type: 3}
   m_Name: PerfectSubtraction
   m_EditorClassIdentifier: Assembly-CSharp::PerfectSubtraction
+  achievementSFX: {fileID: 8300000, guid: 71511e74280b3754fa06dd5e12944944, type: 3}
   _description: Get a perfect score in a subtraction round.
   _thumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}

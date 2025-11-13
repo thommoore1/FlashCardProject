@@ -18,10 +18,10 @@ using Unity.VisualScripting;
 public class Countdown : MonoBehaviour
 {
  
-/*
- * Audio source for playing button sound
- */
- public AudioSource audioData;
+    /*
+     * Audio clip for quiz noise
+     */
+     public AudioClip questionTrack;
  
     /*
      * Question Handler object, used for handling the questions given by game
@@ -51,7 +51,7 @@ public class Countdown : MonoBehaviour
     public void startButton()
     {
         ui.stopButtons();
-        audioData.Play();
+        SoundManager.Instance.switchBackGroundTrackWithFade(questionTrack);
         qHandler.Reset();
         StopAllCoroutines();
         StartCoroutine(countdown());

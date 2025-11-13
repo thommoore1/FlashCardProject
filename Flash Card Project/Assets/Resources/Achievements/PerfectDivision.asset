@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c7fedc6ac47524da12a84f0023f51b, type: 3}
   m_Name: PerfectDivision
   m_EditorClassIdentifier: Assembly-CSharp::PerfectDivision
+  achievementSFX: {fileID: 8300000, guid: 71511e74280b3754fa06dd5e12944944, type: 3}
   _description: Get a perfect score in a division round.
   _thumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}

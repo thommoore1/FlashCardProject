@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05d14b50e3c23147a7c7d34b844b65e, type: 3}
   m_Name: Speedster
   m_EditorClassIdentifier: Assembly-CSharp::Speedster
+  achievementSFX: {fileID: 8300000, guid: 71511e74280b3754fa06dd5e12944944, type: 3}
   _description: 'Answer all questions in a round correctly in less than 10
 
     seconds'

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d638f3c259f7e546a1f6b8c548a9f2d, type: 3}
   m_Name: MathMaster
   m_EditorClassIdentifier: Assembly-CSharp::MathMaster
+  achievementSFX: {fileID: 8300000, guid: 71511e74280b3754fa06dd5e12944944, type: 3}
   _description: Answer X [10,50,100] questions correctly.
   _thumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}
   _tiers:
