@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f80673fbef71943acaf5b7faf26400, type: 3}
   m_Name: PerfectMultiplication
   m_EditorClassIdentifier: Assembly-CSharp::PerfectMultiplication
+  achievementSFX: {fileID: 8300000, guid: 71511e74280b3754fa06dd5e12944944, type: 3}
   _description: Get a perfect score in a math round.
   _thumbnail: {fileID: 21300000, guid: 2ca98e992062a44a7bb603a888785077, type: 3}

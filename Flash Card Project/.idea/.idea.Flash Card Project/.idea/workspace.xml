@@ -6,8 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="87e8f55a-bb20-457e-9efc-af54ba29fe47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flash Card Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/BuzzerBeater.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/BuzzerBeater.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/GoldStar.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/GoldStar.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Huh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/Huh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/MathMaster.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/MathMaster.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Mathematician.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/Mathematician.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectAddition.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectAddition.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectDivision.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectDivision.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectMath.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectMath.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectMultiplication.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectMultiplication.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectSubtraction.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/PerfectSubtraction.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/PlatinumMath.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/PlatinumMath.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Achievements/Speedster.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Achievements/Speedster.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestionHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/AchievementEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scripts/AchievementEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuizGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuizGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Achievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scripts/Achievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Cartoon Splat sound effect.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Cartoon Splat sound effect.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +57,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HuhButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuizGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/ButtonScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -54,7 +74,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;newquestions&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;soundsofsilence&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -147,6 +167,8 @@
       <workItem from="1762799585079" duration="828000" />
       <workItem from="1762970635067" duration="41000" />
       <workItem from="1762970685238" duration="1020000" />
+      <workItem from="1763012317945" duration="6734000" />
+      <workItem from="1763021285382" duration="1900000" />
     </task>
     <servers />
   </component>

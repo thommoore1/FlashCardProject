@@ -10,17 +10,24 @@
  * This file is used to control the state of the current questions
  */
 
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
 public class QuestionHandler : MonoBehaviour
 {
     /*
-     * Audio source for playing button sound
+     * Audio clip for correct answer and incorrect answer
      */
-    public AudioSource audioData;
+    public AudioClip correct;
+    public AudioClip wrong;
+    /*
+     * Audio CLips for background music
+     */
+    public AudioClip lobbyTrack;
     /*
      * Used to represent of number of questions that have been asked
      */
@@ -69,6 +76,11 @@ public class QuestionHandler : MonoBehaviour
      * c. Does not take in value
      * d. No exceptions thrown
      */
+    public void Start()
+    {
+        SoundManager.Instance.playBackGroundTrack(lobbyTrack);
+    }
+
     public void startQuestion()
     {
         totalQuestions = 0;
@@ -90,11 +102,11 @@ public class QuestionHandler : MonoBehaviour
      */
     public void quit()
     {
-        //if (UnityEditor.EditorApplication.isPlaying == true) //comment this if  out before building
-        //{
-        //    UnityEditor.EditorApplication.isPlaying = false;
-        //}
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
 
@@ -106,7 +118,6 @@ public class QuestionHandler : MonoBehaviour
      */
     public void buttonClicked(int button)
     {
-        audioData.Play();
         checkAnswer(button);
     }
 
@@ -135,12 +146,17 @@ public class QuestionHandler : MonoBehaviour
     {
         if (qG.getCorrectAnswer() == bClicked)
         {
+            SoundManager.Instance.playButtonSFX(correct);
             numCorrect++;
             AchievementEvents.OnQuestionAnswered?.Invoke(new AchievementEvents.OnQuestionAnsweredArgs()
             {
                 AnsweredCorrectly =  true,
                 TimeRemaining =  currentTime,
             });
+        }
+        else
+        {
+            SoundManager.Instance.playButtonSFX(wrong);
         }
         timeSpent = timeSpent + (10 - currentTime);
         totalQuestions++;
@@ -156,6 +172,7 @@ public class QuestionHandler : MonoBehaviour
      */
     private void nextQuestion()
     {
+        
         StopAllCoroutines();
         if(totalQuestions < amountQuestions)
         {
@@ -206,6 +223,7 @@ public class QuestionHandler : MonoBehaviour
      */
     private void endGame()
     {
+        SoundManager.Instance.switchBackGroundTrackWithFade(lobbyTrack);
         result.text = numCorrect.ToString() + "/" + totalQuestions.ToString();
         ui.HidesGame();
         ui.ShowsGameResults();
@@ -216,5 +234,6 @@ public class QuestionHandler : MonoBehaviour
             NumCorrectQuestions = numCorrect,
             TotalTimeTaken = timeSpent,
         });
+        
     }
 }

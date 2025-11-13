@@ -23,6 +23,10 @@ public class QuizGenerator : MonoBehaviour
     public List<Question> quiz;
 
     public int qIndex;
+    /*
+     * Audio CLips for background music
+     */
+    public AudioClip questionTrack;
     
     /*
      * a. GenerateQuestion()
@@ -46,6 +50,7 @@ public class QuizGenerator : MonoBehaviour
     {
         qIndex++;
         displayQuestion();
+        SoundManager.Instance.playBackGroundTrack(questionTrack);
     }
 
     public void prevQuestion()

@@ -7,7 +7,7 @@ public abstract class Achievement : ScriptableObject
     public virtual Sprite AchievementThumbnail => _thumbnail;
     public bool HasAchievement => _achievementGotten;
     private bool _achievementGotten = false;
-    
+    public AudioClip achievementSFX;
     public virtual bool IsMaxed => _achievementGotten;
     
     [TextArea]
@@ -25,6 +25,7 @@ public abstract class Achievement : ScriptableObject
         
         _achievementGotten = true;
         Save();
+        SoundManager.Instance.playOtherSFX(achievementSFX);
         AchievementEvents.OnAchievementGet?.Invoke(new AchievementEvents.OnAchievementGetArgs
         {
             AchievementObtained = this
