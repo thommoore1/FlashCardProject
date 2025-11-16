@@ -14,7 +14,7 @@ public class PerfectMultiplication : Achievement
 
     private void OnRoundEnded(AchievementEvents.OnRoundEndedArgs obj)
     {
-        if (obj.QuizType == 3 && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
+        if (StateManager.currentState == States.Multiplying && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
         {
             GetAchievement();
         }

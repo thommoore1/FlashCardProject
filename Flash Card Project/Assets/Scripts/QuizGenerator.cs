@@ -35,13 +35,13 @@ public class QuizGenerator : MonoBehaviour
      * d. No exceptions thrown
      */
 
-    public void GenerateQuiz(int numQuestions, int questionType)
+    public void GenerateQuiz(int numQuestions)
     {
         quiz = new List<Question>();
         qIndex = 0;
         for (int i = 0; i < numQuestions; i++)
         {
-            addQuestion(questionType);
+            addQuestion();
         }
         displayQuestion();
     }
@@ -59,34 +59,50 @@ public class QuizGenerator : MonoBehaviour
         displayQuestion();
     }
 
-    private void addQuestion(int questionType)
+    private void addQuestion()
     {
-        if (questionType != 5)
+        if (StateManager.currentState != States.AllOperations)
         {
-            pickQuestion(questionType);
+            pickQuestion(StateManager.currentState);
         }
         else
         {
             int randomQ = Random.Range(1, 5);
-            pickQuestion(randomQ);
+            States chosenState = States.Adding;
+            switch (randomQ)
+            {
+                case 1:
+                    chosenState = States.Adding;
+                    break;
+                case 2:
+                    chosenState = States.Subtracting;
+                    break;
+                case 3:
+                    chosenState = States.Multiplying;
+                    break;
+                case 4:
+                    chosenState = States.Dividing;
+                    break;
+            }
+            pickQuestion(chosenState);
         }
         
     }
 
-    private void pickQuestion(int questionType)
+    private void pickQuestion(States state)
     {
-        switch (questionType)
+        switch (state)
         {
-            case 1:
+            case States.Adding:
                 quiz.Add(new AdditionQuestion());
                 break;
-            case 2:
+            case States.Subtracting:
                 quiz.Add(new SubtractionQuestion());
                 break;
-            case 3:
+            case States.Multiplying:
                 quiz.Add(new MultiplicationQuestion());
                 break;
-            case 4:
+            case States.Dividing:
                 quiz.Add(new DivisionQuestion());
                 break;
         }

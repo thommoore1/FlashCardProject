@@ -14,7 +14,7 @@ public class PerfectSubtraction : Achievement
 
     private void OnRoundEnded(AchievementEvents.OnRoundEndedArgs obj)
     {
-        if (obj.QuizType == 2&& obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
+        if (StateManager.currentState == States.Subtracting && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
         {
             GetAchievement();
         }

@@ -14,7 +14,7 @@ public class PerfectDivision : Achievement
 
     private void OnRoundEnded(AchievementEvents.OnRoundEndedArgs obj)
     {
-        if (obj.QuizType == 4 && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
+        if (StateManager.currentState == States.Dividing && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
         {
             GetAchievement();
         }

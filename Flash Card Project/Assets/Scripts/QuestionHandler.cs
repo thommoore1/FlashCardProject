@@ -67,9 +67,6 @@ public class QuestionHandler : MonoBehaviour
     //amount of questions to answer
     public int amountQuestions = 3;
     
-    //which type of quiz is it, 1-a,2-s,3-m,4-d,5-all
-    public int quizType;
-    
     /*
      * a. startQuestion()
      * b. Does not return a value
@@ -91,7 +88,24 @@ public class QuestionHandler : MonoBehaviour
     //sets the quiz type
     public void SetQuizType(int qT)
     {
-        quizType = qT;
+        switch (qT)
+        {
+            case 1:
+                StateManager.NewGameState(States.Adding);
+                break;
+            case 2:
+                StateManager.NewGameState(States.Subtracting);
+                break;
+            case 3:
+                StateManager.NewGameState(States.Multiplying);
+                break;
+            case 4:
+                StateManager.NewGameState(States.Dividing);
+                break;
+            case 5:
+                StateManager.NewGameState(States.AllOperations);
+                break;
+        }
     }
     
     /*
@@ -187,7 +201,7 @@ public class QuestionHandler : MonoBehaviour
     private void initializeQuiz()
     {
         StopAllCoroutines();
-        qG.GenerateQuiz(amountQuestions, quizType);
+        qG.GenerateQuiz(amountQuestions);
         StartCoroutine(countdown());
         
     }
@@ -229,11 +243,11 @@ public class QuestionHandler : MonoBehaviour
         ui.ShowsGameResults();
         AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
         {
-            QuizType = quizType,
+            QuizType = StateManager.currentState,
             NumQuestionsAnswered = totalQuestions,
             NumCorrectQuestions = numCorrect,
             TotalTimeTaken = timeSpent,
         });
-        
+        StateManager.NewGameState(States.Results);
     }
 }

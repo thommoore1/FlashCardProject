@@ -14,7 +14,7 @@ public class PerfectAddition : Achievement
 
     private void OnRoundEnded(AchievementEvents.OnRoundEndedArgs obj)
     {
-        if (obj.QuizType == 1&& obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
+        if (StateManager.currentState == States.Adding && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
         {
             GetAchievement();
         }
