@@ -14,7 +14,7 @@ public class PerfectMath : Achievement
 
     private void OnRoundEnded(AchievementEvents.OnRoundEndedArgs obj)
     {
-        if (obj.QuizType == 5 && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
+        if (StateManager.currentState == States.AllOperations && obj.NumCorrectQuestions == obj.NumQuestionsAnswered)
         {
             GetAchievement();
         }

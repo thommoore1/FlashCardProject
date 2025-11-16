@@ -145,6 +145,7 @@ public class UI : MonoBehaviour
      HidesGameResults();
      HidesGame();
      achievementMenuHide();
+     StateManager.NewGameState(States.Menu);
     }
     
     private void ShowResultsAchievements()
