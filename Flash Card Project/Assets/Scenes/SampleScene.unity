@@ -3064,6 +3064,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1701812648}
   - {fileID: 1480113607}
   - {fileID: 2101611855}
   - {fileID: 335939477}
@@ -6469,7 +6470,6 @@ RectTransform:
   - {fileID: 122738638}
   - {fileID: 648100922}
   - {fileID: 1844926850}
-  - {fileID: 1701812648}
   - {fileID: 1756044562}
   - {fileID: 1748293062}
   - {fileID: 596036838}
@@ -6582,12 +6582,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701812647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1695987193}
+  m_Father: {fileID: 648100922}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8012,7 +8012,6 @@ MonoBehaviour:
   qG: {fileID: 6612858367992113731}
   ui: {fileID: 6612858367992113732}
   amountQuestions: 3
-  quizType: 0
 --- !u!4 &5979123063439478707
 Transform:
   m_ObjectHideFlags: 0
