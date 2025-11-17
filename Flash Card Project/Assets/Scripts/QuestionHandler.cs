@@ -233,7 +233,6 @@ public class QuestionHandler : MonoBehaviour
      */
     private void endGame()
     {
-        StateManager.NewGameState(States.Results);
         result.text = numCorrect.ToString() + "/" + totalQuestions.ToString();
         AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
         {
@@ -242,5 +241,6 @@ public class QuestionHandler : MonoBehaviour
             NumCorrectQuestions = numCorrect,
             TotalTimeTaken = timeSpent,
         });
+        StateManager.NewGameState(States.Results);
     }
 }
