@@ -4,7 +4,7 @@
  * Emails: thomoore@chapman.edu rokaw@chapman.edu
  * ID: Tom: 2444464 Sammy: 2444664
  * Course: GAME245-01
- * Assignment 1
+ * Assignment 3
  *
  * 2)
  * This file is used to generate the multiplication questions for the flash cards

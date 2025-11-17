@@ -59,10 +59,6 @@ public class QuestionHandler : MonoBehaviour
      * Used to generate questions
      */
     public QuizGenerator qG;
-    /*
-     * Used to effect UI
-     */
-    public UI ui;
     
     //amount of questions to answer
     public int amountQuestions = 3;
@@ -237,10 +233,8 @@ public class QuestionHandler : MonoBehaviour
      */
     private void endGame()
     {
-        SoundManager.Instance.switchBackGroundTrackWithFade(lobbyTrack);
+        StateManager.NewGameState(States.Results);
         result.text = numCorrect.ToString() + "/" + totalQuestions.ToString();
-        ui.HidesGame();
-        ui.ShowsGameResults();
         AchievementEvents.OnRoundEnded?.Invoke(new AchievementEvents.OnRoundEndedArgs
         {
             QuizType = StateManager.currentState,
@@ -248,6 +242,5 @@ public class QuestionHandler : MonoBehaviour
             NumCorrectQuestions = numCorrect,
             TotalTimeTaken = timeSpent,
         });
-        StateManager.NewGameState(States.Results);
     }
 }

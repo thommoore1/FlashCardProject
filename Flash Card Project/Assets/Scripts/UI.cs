@@ -61,9 +61,9 @@ public class UI : MonoBehaviour
      */
     public void stopButtons()
     {
-     buttonA.interactable = false;
-     buttonB.interactable = false;
-     buttonC.interactable = false;
+         buttonA.interactable = false;
+         buttonB.interactable = false;
+         buttonC.interactable = false;
     }
 
     /*
@@ -74,9 +74,9 @@ public class UI : MonoBehaviour
      */
     public void startButtons()
     {
-     buttonA.interactable = true;
-     buttonB.interactable = true;
-     buttonC.interactable = true;
+        buttonA.interactable = true;
+        buttonB.interactable = true;
+        buttonC.interactable = true;
     }
 
     /*
@@ -98,7 +98,7 @@ public class UI : MonoBehaviour
      */
     public void HidesSG()
     {
-     CanvasGroupDisplayer.Hide(startScreenGroup);
+        CanvasGroupDisplayer.Hide(startScreenGroup);
     }
     
     public void achievementMenuShow()
@@ -137,15 +137,18 @@ public class UI : MonoBehaviour
 
     public void ShowsStart()
     { 
-     CanvasGroupDisplayer.Show(startScreenGroup);
+        CanvasGroupDisplayer.Show(startScreenGroup);
     }
 
+    public void SwitchtoMM()
+    {
+        StateManager.NewGameState(States.Menu);
+    }
     public void GoToStart()
     {
-     HidesGameResults();
-     HidesGame();
-     achievementMenuHide();
-     StateManager.NewGameState(States.Menu);
+        HidesGameResults();
+        HidesGame();
+        achievementMenuHide();
     }
     
     private void ShowResultsAchievements()
@@ -160,14 +163,14 @@ public class UI : MonoBehaviour
 
     public void showsResultsAchievements()
     {
-     ShowResultsAchievements();
-     HidesGameResults();
+        ShowResultsAchievements();
+        HidesGameResults();
     }
     
     public void hidesResultsAchievements()
     {
-     hideResultsAchievements();
-     ShowsGameResults();
+        hideResultsAchievements();
+        ShowsGameResults();
     }
 
     public void ShowQuizSelection()

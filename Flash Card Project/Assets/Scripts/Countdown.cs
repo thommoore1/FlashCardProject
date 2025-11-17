@@ -17,12 +17,8 @@ using Unity.VisualScripting;
 
 public class Countdown : MonoBehaviour
 {
- 
-    /*
-     * Audio clip for quiz noise
-     */
-     public AudioClip questionTrack;
- 
+    //audio file for question track
+    public AudioClip questionTrack;
     /*
      * Question Handler object, used for handling the questions given by game
      */
@@ -50,11 +46,15 @@ public class Countdown : MonoBehaviour
      */
     public void startButton()
     {
-        ui.stopButtons();
-        SoundManager.Instance.switchBackGroundTrackWithFade(questionTrack);
         qHandler.Reset();
         StopAllCoroutines();
         StartCoroutine(countdown());
+    }
+
+    public void RestartButton()
+    {
+        SoundManager.Instance.switchBackGroundTrackWithFade(questionTrack);
+        startButton();
     }
     
     /*
@@ -65,9 +65,6 @@ public class Countdown : MonoBehaviour
      */
     private IEnumerator countdown()
     {
-        ui.HidesSG();
-        ui.HidesGameResults();
-        ui.ShowsGame();
         otherText.text = "game starts";
         int time = 5;
         while (time > 0)

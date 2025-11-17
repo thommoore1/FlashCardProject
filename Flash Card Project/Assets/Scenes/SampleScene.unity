@@ -728,18 +728,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6612858367992113732}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: GoToStart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 6612858367992113735}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: PlayOtherSFX
@@ -747,6 +735,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 9c28b426426574906bc4de2993972d08, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6612858367992113732}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SwitchtoMM
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6640,7 +6640,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6612858367992113733}
         m_TargetAssemblyTypeName: Countdown, Assembly-CSharp
-        m_MethodName: startButton
+        m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8010,7 +8010,6 @@ MonoBehaviour:
   otherText: {fileID: 1217533675}
   result: {fileID: 332710244}
   qG: {fileID: 6612858367992113731}
-  ui: {fileID: 6612858367992113732}
   amountQuestions: 3
 --- !u!4 &5979123063439478707
 Transform:
@@ -8042,6 +8041,7 @@ GameObject:
   - component: {fileID: 6612858367992113733}
   - component: {fileID: 6612858367992113735}
   - component: {fileID: 6612858367992113734}
+  - component: {fileID: 6612858367992113736}
   m_Layer: 0
   m_Name: GOD
   m_TagString: Untagged
@@ -8130,6 +8130,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a01d07d035545624f8f5b337ef519fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &6612858367992113736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513701003158295201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd7858935ddcf64184f830601553d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIEvents
+  ui: {fileID: 6612858367992113732}
+  lobbyTrack: {fileID: 8300000, guid: 50fe3a1b6c641e64096c7fa9bf3671b0, type: 3}
+  questionTrack: {fileID: 8300000, guid: 0faabd867805f1c4a9a0ce2eec022b3b, type: 3}
 --- !u!1001 &6807076392600690799
 PrefabInstance:
   m_ObjectHideFlags: 0
